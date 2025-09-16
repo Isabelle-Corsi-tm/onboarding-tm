@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding Completo - Trademaster</title>
     <style>
+        /* ADIÇÃO PARA MELHORAR A NAVEGAÇÃO */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px; /* Evita que o título fique atrás do menu */
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -51,7 +57,9 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        nav a:hover {
+        /* ESTILO PARA O LINK ATIVO E HOVER */
+        nav a:hover,
+        nav a.active {
             background-color: #00A2A4;
         }
         .section {
@@ -122,7 +130,7 @@
     </header>
 
     <nav>
-        <a href="#geral">Visão Geral</a>
+        <a href="#geral" class="active">Visão Geral</a>
         <a href="#produtos">Produtos</a>
         <a href="#jornadas">Jornadas</a>
         <a href="#comercial">Área Comercial</a>
@@ -190,31 +198,31 @@
                    <p><strong>O que é?</strong><br>Solução para empresas que desejam antecipar seus recebíveis, e estender ou manter os prazos de pagamentos de seus compradores.</p>
                     <p><strong>Como Funciona:</strong></p>
                     <ul>
-                       <li>Cliente realiza a venda a prazo.</li>
-                       <li>Trademaster antecipa o valor da venda ao cliente, descontando a taxa.</li>
-                       <li>Trademaster cobra o comprador no prazo acordado.</li>
+                        <li>Cliente realiza a venda a prazo.</li>
+                        <li>Trademaster antecipa o valor da venda ao cliente, descontando a taxa.</li>
+                        <li>Trademaster cobra o comprador no prazo acordado.</li>
                     </ul>
                     <p><strong>Características:</strong></p>
-                     <ul>
-                       <li><strong>Repasse:</strong> Em D+2 úteis.</li>
-                       <li><strong>Garantia:</strong> A Trademaster garante o pagamento ao cliente, mesmo em caso de inadimplência do comprador.</li>
+                      <ul>
+                        <li><strong>Repasse:</strong> Em D+2 úteis.</li>
+                        <li><strong>GarantIA:</strong> A Trademaster garante o pagamento ao cliente, mesmo em caso de inadimplência do comprador.</li>
                     </ul>
                 </div>
 
                 <div class="card">
                     <h3>Tradedelta</h3>
-                     
+                      
                     <p><strong>O que é?</strong><br>Solução para empresas que desejam antecipar seus recebíveis, mas com taxas proporcionais ao prazo de antecipação.</p>
                     <p><strong>Como Funciona:</strong></p>
                     <ul>
-                        <li>Cliente realiza a venda a prazo.</li>
-                        <li>A taxa é calculada com base no prazo entre a data de repasse e a de vencimento do boleto.</li>
-                        <li>Trademaster antecipa o valor da venda, descontando a taxa.</li>
+                         <li>Cliente realiza a venda a prazo.</li>
+                         <li>A taxa é calculada com base no prazo entre a data de repasse e a de vencimento do boleto.</li>
+                         <li>Trademaster antecipa o valor da venda, descontando a taxa.</li>
                     </ul>
                      <p><strong>Características:</strong></p>
-                     <ul>
-                        <li><strong>Garantia:</strong> A Trademaster garante o pagamento ao cliente, eliminando o risco de inadimplência.</li>
-                        <li><strong>Taxa de Antecipação:</strong> Calculada mensalmente (pro rata die).</li>
+                      <ul>
+                         <li><strong>Garantia:</strong> A Trademaster garante o pagamento ao cliente, eliminando o risco de inadimplência.</li>
+                         <li><strong>Taxa de Antecipação:</strong> Calculada mensalmente (pro rata die).</li>
                     </ul>
                 </div>
             </div>
@@ -226,14 +234,14 @@
                     <p><strong>O que é?</strong><br>Solução para empresas que vendem a prazo e desejam ter a garantia de recebimento, sem a necessidade de antecipar os valores.</p>
                     <p><strong>Como Funciona:</strong></p>
                     <ul>
-                        <li>Cliente realiza a venda a prazo para o comprador.</li>
-                        <li>Trademaster garante o pagamento, eliminando o risco de inadimplência.</li>
-                        <li>A Trademaster repassa o valor ao cliente.</li>
+                         <li>Cliente realiza a venda a prazo para o comprador.</li>
+                         <li>Trademaster garante o pagamento, eliminando o risco de inadimplência.</li>
+                         <li>A Trademaster repassa o valor ao cliente.</li>
                     </ul>
                      <p><strong>Características:</strong></p>
                     <ul>
-                        <li><strong>Repasse:</strong> Em D+2 úteis do pagamento do boleto pelo comprador.</li>
-                        <li><strong>Garantia:</strong> A Trademaster garante o pagamento mesmo em caso de atraso ou inadimplência do comprador.</li>
+                         <li><strong>Repasse:</strong> Em D+2 úteis do pagamento do boleto pelo comprador.</li>
+                         <li><strong>Garantia:</strong> A Trademaster garante o pagamento mesmo em caso de atraso ou inadimplência do comprador.</li>
                     </ul>
                 </div>
 
@@ -242,9 +250,9 @@
                     <p><strong>O que é?</strong><br>Solução similar ao Tradeone, mas com um prazo de repasse mais curto. Ideal para clientes que precisam de maior agilidade no recebimento.</p>
                     <p><strong>Como Funciona:</strong><br>(Similar ao Tradeone, mas com a diferença no prazo de repasse).</p>
                      <p><strong>Características:</strong></p>
-                     <ul>
-                        <li><strong>Repasse:</strong> Em D+1 do vencimento do título.</li>
-                        <li><strong>Garantia:</strong> A Trademaster garante o pagamento ao cliente, mesmo em caso de atraso ou inadimplência do comprador.</li>
+                      <ul>
+                         <li><strong>Repasse:</strong> Em D+1 do vencimento do título.</li>
+                         <li><strong>Garantia:</strong> A Trademaster garante o pagamento ao cliente, mesmo em caso de atraso ou inadimplência do comprador.</li>
                     </ul>
                 </div>
             </div>
@@ -255,8 +263,8 @@
                     <h4>E se algo mudar após a venda?</h4>
                     <p>Podem ocorrer alterações nos boletos, que geram um acerto financeiro.</p>
                     <ul>
-                       <li><strong>Exceções:</strong> Solicitações de alteração nos boletos (cancelar, prorrogar, etc.).</li>
-                       <li><strong>Chargeback:</strong> O acerto financeiro que acontece por causa de uma exceção.</li>
+                        <li><strong>Exceções:</strong> Solicitações de alteração nos boletos (cancelar, prorrogar, etc.).</li>
+                        <li><strong>Chargeback:</strong> O acerto financeiro que acontece por causa de uma exceção.</li>
                     </ul>
                 </div>
             </div>
@@ -269,19 +277,19 @@
                     <h3>Jornada do Convênio (Vendedor)</h3>
                     <p>Para uma indústria ou distribuidor, o desafio é vender mais e garantir o recebimento. O processo para se tornar um convênio é:</p>
                     <ul>
-                        <li>Configuração do Contrato.</li>
-                        <li>Envio da base de clientes para Análise de Crédito.</li>
-                        <li>Definição dos Limites para os Compradores.</li>
+                         <li>Configuração do Contrato.</li>
+                         <li>Envio da base de clientes para Análise de Crédito.</li>
+                         <li>Definição dos Limites para os Compradores.</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h3>Jornada do Comprador</h3>
                     
                     <p>Para o comprador, o desafio é gerenciar múltiplos fornecedores e boletos. 
-                        A Trademaster oferece uma experiência unificada:</p>
+                         A Trademaster oferece uma experiência unificada:</p>
                     <ul>
-                        <li>O Comprador ganha um limite de crédito para usar na rede Trademaster.</li>
-                        <li>Ele compra normalmente do fornecedor e paga um único boleto para a Trademaster.</li>
+                         <li>O Comprador ganha um limite de crédito para usar na rede Trademaster.</li>
+                         <li>Ele compra normalmente do fornecedor e paga um único boleto para a Trademaster.</li>
                     </ul>
                 </div>
             </div>
@@ -297,54 +305,54 @@
                 <div class="card">
                     <h4>Melhora nos Indicadores Financeiros</h4>
                     <ul>
-                        <li>Diminuição do DSO (indicador de recebimento e faturamento) e do capital de giro (Working Capital).</li>
-                        <li>Operações "off balance", que não pesam no balanço do cliente.</li>
-                        <li>Não há incidência de IOF.</li>
+                         <li>Diminuição do DSO (indicador de recebimento e faturamento) e do capital de giro (Working Capital).</li>
+                         <li>Operações "off balance", que não pesam no balanço do cliente.</li>
+                         <li>Não há incidência de IOF.</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h4>Aumento de Vendas</h4>
-                     <ul>
-                        <li>Aumento no prazo de pagamento e nos limites de crédito.</li>
-                        <li>Apoio ao incremento do mix de produtos por pedido.</li>
-                        <li>Facilita a entrada em novos canais de venda.</li>
+                      <ul>
+                         <li>Aumento no prazo de pagamento e nos limites de crédito.</li>
+                         <li>Apoio ao incremento do mix de produtos por pedido.</li>
+                         <li>Facilita a entrada em novos canais de venda.</li>
                     </ul>
                 </div>
                  <div class="card">
                     <h4>Risco Zero e Flexibilidade</h4>
                     <ul>
-                        <li>O risco de inadimplência para o vendedor é zero.</li>
-                        <li>Garantia de recebimento, pois a Trademaster assume o risco.</li>
-                        <li>Tratamento completo de exceções como cancelamentos, devoluções e prorrogações.</li>
+                         <li>O risco de inadimplência para o vendedor é zero.</li>
+                         <li>Garantia de recebimento, pois a Trademaster assume o risco.</li>
+                         <li>Tratamento completo de exceções como cancelamentos, devoluções e prorrogações.</li>
                     </ul>
                 </div>
             </div>
         </section>
         <section id="operacoes" class="section">
-            <h2>Operações e Processos Detalhados</h2>
+            <h2>Operações e Processos Detalhados</h2>
             <p>O trabalho da área de Operações Financeiras abrange um ciclo completo de atividades interligadas, garantindo a fluidez e segurança das transações.</p>
 
-            <h3>1. Homologação</h3>
-            <div class="card">
-                <h4>Verificação Inicial</h4>
+            <h3>1. Homologação</h3>
+            <div class="card">
+                <h4>Verificação Inicial</h4>
                 <p>A etapa de homologação é um processo de verificação que abrange quatro áreas principais para garantir a conformidade e a correção das informações antes do processamento.</p>
-                <ul>
-                    <li>Dados cadastrais.</li>
-                    <li>Boletos.</li>
-                    <li>Chargeback.</li>
-                    <li>Contas a Pagar (Repasse).</li>
-                </ul>
-            </div>
+                <ul>
+                    <li>Dados cadastrais.</li>
+                    <li>Boletos.</li>
+                    <li>Chargeback.</li>
+                    <li>Contas a Pagar (Repasse).</li>
+                </ul>
+            </div>
 
-            <h3>2. Contas a Pagar - Repasses</h3>
+            <h3>2. Contas a Pagar - Repasses</h3>
             <div class="grid-container">
                 <div class="card">
                     <h4>Processos Principais</h4>
                     <ul>
-                        <li><strong>Validação de Títulos:</strong> Processo diário e manual que confronta o Relatório de Liquidação com a plataforma TradeOne.</li>
-                        <li><strong>Validação de Prazos e Taxas de Antecipação</strong>.</li>
-                        <li><strong>Criação de Arquivos de Pagamento:</strong> Conferência para as plataformas Trademax e Tradeone.</li>
-                        <li><strong>Validação de Pagamentos:</strong> Acompanhamento dos arquivos no banco e confirmação via extrato.</li>
+                         <li><strong>Validação de Títulos:</strong> Processo diário e manual que confronta o Relatório de Liquidação com a plataforma TradeOne.</li>
+                         <li><strong>Validação de Prazos e Taxas de Antecipação</strong>.</li>
+                         <li><strong>Criação de Arquivos de Pagamento:</strong> Conferência para as plataformas Trademax e Tradeone.</li>
+                         <li><strong>Validação de Pagamentos:</strong> Acompanhamento dos arquivos no banco e confirmação via extrato.</li>
                     </ul>
                 </div>
                 <div class="card">
@@ -352,29 +360,29 @@
                     <p>Em caso de perda de prazo no repasse, a Trademaster paga juros e multa.</p>
                     <p><strong>Prazos Diários Cruciais:</strong></p>
                     <ul>
-                        <li><strong>Até 11:00h:</strong> Validação dos repasses gerados pela plataforma.</li>
-                        <li><strong>Até 14:00h:</strong> Validação dos CNABs enviados ao Banco.</li>
-                        <li><strong>Até 16:00h:</strong> Acompanhamento da entrada de recurso para liberação dos repasses.</li>
+                         <li><strong>Até 11:00h:</strong> Validação dos repasses gerados pela plataforma.</li>
+                         <li><strong>Até 14:00h:</strong> Validação dos CNABs enviados ao Banco.</li>
+                         <li><strong>Até 16:00h:</strong> Acompanhamento da entrada de recurso para liberação dos repasses.</li>
                     </ul>
                 </div>
             </div>
 
-            <h3>3. Contas a Receber</h3>
+            <h3>3. Contas a Receber</h3>
             <div class="grid-container">
                 <div class="card">
                     <h4>Gestão de Exceções</h4>
                     <p>As exceções (alterações) são inseridas pela ferramenta <strong>Hicks</strong> e podem ser:</p>
                     <ul>
-                        <li>Prorrogação.</li>
-                        <li>Devolução Parcial.</li>
-                        <li>Devolução Total ou Cancelamento.</li>
-                        <li>Ted TM ou Convênio.</li>
+                         <li>Prorrogação.</li>
+                         <li>Devolução Parcial.</li>
+                         <li>Devolução Total ou Cancelamento.</li>
+                         <li>Ted TM ou Convênio.</li>
                     </ul>
                     <p>O SLA para atendimento varia de D+2 a D+4 dias úteis, dependendo do FIDC e do método de input (API ou Trade Direct).</p>
                 </div>
             </div>
 
-            <h3>5. Cobrança de Chargeback</h3>
+            <h3>5. Cobrança de Chargeback</h3>
             <p>Chargeback é o processo de ressarcimento de valores junto aos convênios quando ocorre alguma alteração na operação original.</p>
              <div class="grid-container">
                 <div class="card">
@@ -385,34 +393,34 @@
                 <div class="card">
                     <h4>Dados (Jan a Abr 2025)</h4>
                     <ul>
-                        <li><strong>Convênios/Sellers Ativos:</strong> 223.</li>
-                        <li><strong>Convênios com Chargeback Automático:</strong> 31</li>
-                        <li><strong>Valor Recebido:</strong> Mais de R$ 63 milhões.</li>
-                        <li><strong>Taxa de Recebimento (Março):</strong> Superior a 96%.</li>
+                         <li><strong>Convênios/Sellers Ativos:</strong> 223.</li>
+                         <li><strong>Convênios com Chargeback Automático:</strong> 31</li>
+                         <li><strong>Valor Recebido:</strong> Mais de R$ 63 milhões.</li>
+                         <li><strong>Taxa de Recebimento (Março):</strong> Superior a 96%.</li>
                     </ul>
                 </div>
             </div>
 
-            <h3>6. Nota Fiscal de Boleto e Intercâmbio</h3>
+            <h3>6. Nota Fiscal de Boleto e Intercâmbio</h3>
              <div class="card">
                 <p>A área também é responsável pela gestão de duas notas fiscais distintas:</p>
                 <ul>
-                    <li><strong>Nota Fiscal de Boleto:</strong> Refere-se à taxa cobrada por cada boleto bancário registrado.</li>
-                    <li><strong>Nota Fiscal de Intercâmbio:</strong> Corresponde à taxa sobre os repasses realizados aos parceiros (Tradeone/Tradedue).</li>
+                     <li><strong>Nota Fiscal de Boleto:</strong> Refere-se à taxa cobrada por cada boleto bancário registrado.</li>
+                     <li><strong>Nota Fiscal de Intercâmbio:</strong> Corresponde à taxa sobre os repasses realizados aos parceiros (Tradeone/Tradedue).</li>
                 </ul>
                 <p>O fluxo de emissão é mensal e envolve várias etapas de validação e envio.</p>
             </div>
-        </section>
-        
-        <section id="ciclo" class="section">
+        </section>
+        
+        <section id="ciclo" class="section">
             <h2>Processo Operacional Diário</h2>
             <div class="card">
                 <p>Além do ciclo principal, a equipe executa tarefas operacionais diárias essenciais para a manutenção e saúde das operações.</p>
                 <ul>
-                    <li>Tratamento de e-mails (Nível 2).</li>
-                    <li>Levantamento e acerto de créditos pendentes (Boletos e Extrato).</li>
-                    <li>Conciliação de TEDs na conta da Trademaster.</li>
-                    <li>Gestão de Custas e Contestações.</li>
+                     <li>Tratamento de e-mails (Nível 2).</li>
+                     <li>Levantamento e acerto de créditos pendentes (Boletos e Extrato).</li>
+                     <li>Conciliação de TEDs na conta da Trademaster.</li>
+                     <li>Gestão de Custas e Contestações.</li>
                 </ul>
             </div>
         </section>
@@ -428,23 +436,23 @@
                     <p><strong>Definição:</strong> A cessão é a transferência da titularidade de um direito creditório para outra instituição (FIDCs e/ou bancos) a uma taxa previamente acordada. Isso otimiza o fluxo de caixa, diversifica fontes de receita e impulsiona o crescimento.</p>
                     <p><strong>Processo de Cessão:</strong> O fluxo ocorre em seis etapas principais:</p>
                     <ul>
-                        <li>Análise de Elegibilidade</li>
-                        <li>Geração da cessão em sistema</li>
-                        <li>Acompanhamento do envio e retorno da cessão</li>
-                        <li>Assinatura do Termo</li>
-                        <li>Crédito da cessão em conta</li>
-                        <li>"De Para" do boleto</li>
+                         <li>Análise de Elegibilidade</li>
+                         <li>Geração da cessão em sistema</li>
+                         <li>Acompanhamento do envio e retorno da cessão</li>
+                         <li>Assinatura do Termo</li>
+                         <li>Crédito da cessão em conta</li>
+                         <li>"De Para" do boleto</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h4>Regras de Elegibilidade</h4>
                     <p>Para um título ser cedido, ele precisa atender a critérios como:</p>
                     <ul>
-                        <li>Valor do Título</li>
-                        <li>Data de Vencimento (prazo mínimo e máximo)</li>
-                        <li>Análise de Crédito do Fundo</li>
-                        <li>Inadimplência</li>
-                        <li>Não possuir particularidades como Recuperação Judicial, Protestos, Negativação ou CNPJ inapto</li>
+                         <li>Valor do Título</li>
+                         <li>Data de Vencimento (prazo mínimo e máximo)</li>
+                         <li>Análise de Crédito do Fundo</li>
+                         <li>Inadimplência</li>
+                         <li>Não possuir particularidades como Recuperação Judicial, Protestos, Negativação ou CNPJ inapto</li>
                     </ul>
                     <h4>Fluxo de Caixa e Contas a Pagar</h4>
                     <p>Esta área é responsável pela gestão e projeção do fluxo de caixa, custos de funding, empréstimos, investimentos e pagamento de fornecedores. A equipe realiza reuniões diárias para planejamento de caixa e gerencia o relacionamento com cinco FIDCs onde a Trademaster é cedente exclusiva.</p>
@@ -461,20 +469,20 @@
                 <div class="card">
                     <h4>Principais Contribuições</h4>
                     <ul>
-                        <li><strong>Controle Financeiro:</strong> Monitora receitas, despesas e lucros, dando uma visão clara da saúde financeira da empresa.</li>
-                        <li><strong>Planejamento Estratégico:</strong> Auxilia na elaboração de orçamentos e projeções, fornecendo dados para decisões como expansão ou redução de custos.</li>
-                        <li><strong>Conformidade Legal e Fiscal:</strong> Garante que a empresa esteja em conformidade com as leis tributárias, minimizando riscos de multas.</li>
-                        <li><strong>Apoio à Decisão:</strong> Fornece relatórios detalhados (balanço patrimonial, DRE) que suportam negociações com investidores e bancos.</li>
-                        <li><strong>Transparência e Credibilidade:</strong> Cria confiança entre acionistas e investidores, facilitando o acesso a crédito e financiamento.</li>
+                         <li><strong>Controle Financeiro:</strong> Monitora receitas, despesas e lucros, dando uma visão clara da saúde financeira da empresa.</li>
+                         <li><strong>Planejamento Estratégico:</strong> Auxilia na elaboração de orçamentos e projeções, fornecendo dados para decisões como expansão ou redução de custos.</li>
+                         <li><strong>Conformidade Legal e Fiscal:</strong> Garante que a empresa esteja em conformidade com as leis tributárias, minimizando riscos de multas.</li>
+                         <li><strong>Apoio à Decisão:</strong> Fornece relatórios detalhados (balanço patrimonial, DRE) que suportam negociações com investidores e bancos.</li>
+                         <li><strong>Transparência e Credibilidade:</strong> Cria confiança entre acionistas e investidores, facilitando o acesso a crédito e financiamento.</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h4>O Balanço Patrimonial</h4>
                     <p>É uma fotografia da posição financeira da empresa, dividida em:</p>
                     <ul>
-                        <li><strong>Ativo:</strong> Bens e Direitos da empresa (Ex: Carteira de recebíveis).</li>
-                        <li><strong>Passivo:</strong> Deveres e Obrigações (Ex: Repasse aos Convênios).</li>
-                        <li><strong>Patrimônio Líquido:</strong> Capital Social e o Resultado da empresa.</li>
+                         <li><strong>Ativo:</strong> Bens e Direitos da empresa (Ex: Carteira de recebíveis).</li>
+                         <li><strong>Passivo:</strong> Deveres e Obrigações (Ex: Repasse aos Convênios).</li>
+                         <li><strong>Patrimônio Líquido:</strong> Capital Social e o Resultado da empresa.</li>
                     </ul>
                 </div>
             </div>
@@ -500,10 +508,10 @@
                 <h4>2. Pilares da Análise de Crédito</h4>
                 <p>A análise de crédito, seja automática ou manual, se baseia em quatro pilares principais:</p>
                 <ul>
-                    <li><strong>Serasa:</strong> Para verificar o comportamento de mercado do cliente.</li>
-                    <li><strong>Histórico de Compras:</strong> Análise do histórico do cliente com o convênio solicitante.</li>
-                    <li><strong>Histórico Interno na Trade:</strong> Verificação de como o cliente se comportou em pagamentos anteriores dentro da plataforma.</li>
-                    <li><strong>Balanço Patrimonial:</strong> Utilizado principalmente para limites superiores a R$ 500 mil, para confirmar o faturamento e a saúde financeira da empresa.</li>
+                     <li><strong>Serasa:</strong> Para verificar o comportamento de mercado do cliente.</li>
+                     <li><strong>Histórico de Compras:</strong> Análise do histórico do cliente com o convênio solicitante.</li>
+                     <li><strong>Histórico Interno na Trade:</strong> Verificação de como o cliente se comportou em pagamentos anteriores dentro da plataforma.</li>
+                     <li><strong>Balanço Patrimonial:</strong> Utilizado principalmente para limites superiores a R$ 500 mil, para confirmar o faturamento e a saúde financeira da empresa.</li>
                 </ul>
             </div>
             
@@ -512,10 +520,10 @@
                 <p>Quando uma proposta excede a alçada automática do motor de crédito ou requer uma análise mais detalhada, ela é encaminhada para a Mesa de Crédito. A equipe avalia o histórico financeiro, dados de mercado e as informações disponíveis para tomar uma decisão.</p>
                 <p>As alçadas de aprovação são estruturadas por níveis de complexidade e valor:</p>
                 <ul>
-                    <li><strong>Até R$ 500.000:</strong> Analisado pela equipe da mesa de crédito, com diferentes níveis de aprovação interna.</li>
-                    <li><strong>De R$ 500.000 a R$ 3 milhões:</strong> A decisão é tomada em um comitê diário com a participação da diretoria.</li>
-                    <li><strong>Acima de R$ 3 milhões:</strong> A aprovação depende da alçada do Banco Votorantim e envolve parceiros como Sofisa e BV.</li>
-                    <li><strong>Acima de R$ 5 milhões:</strong> É obrigatória a contratação de um seguro de crédito.</li>
+                     <li><strong>Até R$ 500.000:</strong> Analisado pela equipe da mesa de crédito, com diferentes níveis de aprovação interna.</li>
+                     <li><strong>De R$ 500.000 a R$ 3 milhões:</strong> A decisão é tomada em um comitê diário com a participação da diretoria.</li>
+                     <li><strong>Acima de R$ 3 milhões:</strong> A aprovação depende da alçada do Banco Votorantim e envolve parceiros como Sofisa e BV.</li>
+                     <li><strong>Acima de R$ 5 milhões:</strong> É obrigatória a contratação de um seguro de crédito.</li>
                 </ul>
                 <p>Um dos desafios da mesa é a defasagem das informações financeiras, pois os balanços podem não refletir a situação mais recente da empresa. Para agilizar esse processo, a área implementou Inteligência Artificial para automatizar a leitura e consolidação de indicadores de documentos, reduzindo análises que levavam horas para segundos.</p>
             </div>
@@ -524,11 +532,11 @@
             <p>A documentação exigida varia conforme o valor do limite solicitado:</p>
             <ul>
                 
-                <li><strong>Abaixo de R$ 1.000:</strong> A consulta ao Serasa costuma ser suficiente, exceto se os dados forem insuficientes.</li>
+                 <li><strong>Abaixo de R$ 1.000:</strong> A consulta ao Serasa costuma ser suficiente, exceto se os dados forem insuficientes.</li>
                 
-                <li><strong>Acima de R$ 500.000:</strong> É necessário apresentar o balanço dos últimos dois anos e um balancete do ano corrente, além de abertura de faturamento, detalhamento do endividamento e contrato social.</li>
+                 <li><strong>Acima de R$ 500.000:</strong> É necessário apresentar o balanço dos últimos dois anos e um balancete do ano corrente, além de abertura de faturamento, detalhamento do endividamento e contrato social.</li>
                 
-                <li><strong>Acima de R$ 3 milhões:</strong> Informações adicionais podem ser requeridas pelos parceiros financeiros.</li>
+                 <li><strong>Acima de R$ 3 milhões:</strong> Informações adicionais podem ser requeridas pelos parceiros financeiros.</li>
             </ul>
             
             <p>O <strong>parecer comercial</strong> é um documento crucial, pois explica à mesa de crédito a motivação por trás do pedido de limite, facilitando a avaliação e a busca por aprovações em caráter de exceção. É fundamental que o parecer sempre contenha o valor do pedido.</p>
@@ -538,9 +546,9 @@
             <div class="card">
                 <h4>Práticas de Gestão de Risco</h4>
                 <ul>
-                    <li><strong>Provisão para Devedores Duvidosos (PDD):</strong> Uma reserva de caixa baseada no risco e no porte do cliente para cobrir perdas com inadimplência. A provisão aumenta conforme o tempo de atraso de um título, chegando a 100% da dívida para atrasos de 180 dias.</li>
-                    <li><strong>Acompanhamento por Safra:</strong> A inadimplência é monitorada por "safra de vencimento", comparando o total que vencia em um mês com o valor que efetivamente ficou em atraso. Atualmente, o indicador de inadimplência está mais que o dobro da meta.</li>
-                    <li><strong>Estratégias de Redução:</strong> As estratégias incluem avaliar e "cortar" clientes com alta inadimplência e alterar as regras do motor de aprovação, decisões que são levadas a um comitê de diretores.</li>
+                     <li><strong>Provisão para Devedores Duvidosos (PDD):</strong> Uma reserva de caixa baseada no risco e no porte do cliente para cobrir perdas com inadimplência. A provisão aumenta conforme o tempo de atraso de um título, chegando a 100% da dívida para atrasos de 180 dias.</li>
+                     <li><strong>Acompanhamento por Safra:</strong> A inadimplência é monitorada por "safra de vencimento", comparando o total que vencia em um mês com o valor que efetivamente ficou em atraso. Atualmente, o indicador de inadimplência está mais que o dobro da meta.</li>
+                     <li><strong>Estratégias de Redução:</strong> As estratégias incluem avaliar e "cortar" clientes com alta inadimplência e alterar as regras do motor de aprovação, decisões que são levadas a um comitê de diretores.</li>
                 </ul>
             </div>
 
@@ -552,15 +560,15 @@
                     <h4>A Régua de Cobrança</h4>
                     <p>A régua de cobrança é um processo com etapas bem definidas e que pode ser customizada por convênio:</p>
                     <ol style="list-style-type: decimal; padding-left: 20px;">
-                        <li style="background: none; padding-left: 5px; margin-bottom: 10px;"><strong>Ação Preventiva:</strong> Com 15 dias de antecedência, são enviados avisos de compra e o boleto para o cliente.</li>
-                        <li style="background: none; padding-left: 5px; margin-bottom: 10px;"><strong>Início da Cobrança:</strong> A cobrança efetiva começa com 2 dias de atraso, realizada por um parceiro externo (BPO) e por uma equipe interna para clientes de alto valor.</li>
-                        <li style="background: none; padding-left: 5px; margin-bottom: 10px;"><strong>Ações Progressivas:</strong>
-                            <ul style="margin-top: 10px;">
-                                <li><strong>3 dias de atraso:</strong> O cliente é bloqueado para novas compras.</li>
-                                <li><strong>10 dias de atraso:</strong> O nome do cliente é negativado no Serasa.</li>
-                                <li><strong>30 dias de atraso:</strong> Títulos acima de R$ 10.000 são protestados.</li>
-                            </ul>
-                        </li>
+                         <li style="background: none; padding-left: 5px; margin-bottom: 10px;"><strong>Ação Preventiva:</strong> Com 15 dias de antecedência, são enviados avisos de compra e o boleto para o cliente.</li>
+                         <li style="background: none; padding-left: 5px; margin-bottom: 10px;"><strong>Início da Cobrança:</strong> A cobrança efetiva começa com 2 dias de atraso, realizada por um parceiro externo (BPO) e por uma equipe interna para clientes de alto valor.</li>
+                         <li style="background: none; padding-left: 5px; margin-bottom: 10px;"><strong>Ações Progressivas:</strong>
+                             <ul style="margin-top: 10px;">
+                                 <li><strong>3 dias de atraso:</strong> O cliente é bloqueado para novas compras.</li>
+                                 <li><strong>10 dias de atraso:</strong> O nome do cliente é negativado no Serasa.</li>
+                                 <li><strong>30 dias de atraso:</strong> Títulos acima de R$ 10.000 são protestados.</li>
+                             </ul>
+                         </li>
                     </ol>
                     <p>A cobrança segue a regra do "efeito vagão", onde as ações são baseadas no título com o maior atraso do cliente.</p>
                 </div>
@@ -607,17 +615,17 @@
                     <p>O desenvolvimento de novos produtos, demandas ou features segue um fluxo ágil baseado em Lean. O processo tem início com uma fase de "Discovery", onde a necessidade de negócio é alinhada com o Business Owner (BO) da área solicitante. Após a análise e aprovação pela TI, a demanda é priorizada e entra em uma sprint de desenvolvimento de duas semanas.</p>
                     <h4>Ciclo de Vida da Demanda:</h4>
                      <div class="flow-diagram">
-                        <span class="step">Ideação</span><span class="arrow">&rarr;</span><span class="step">Discovery</span><span class="arrow">&rarr;</span><span class="step">Priorização</span><span class="arrow">&rarr;</span><span class="step">Inception</span><span class="arrow">&rarr;</span><span class="step">Refinamento</span><span class="arrow">&rarr;</span><span class="step">Planejamento</span><span class="arrow">&rarr;</span><span class="step">Construção</span><span class="arrow">&rarr;</span><span class="step">Pós-Implantação</span>
+                         <span class="step">Ideação</span><span class="arrow">&rarr;</span><span class="step">Discovery</span><span class="arrow">&rarr;</span><span class="step">Priorização</span><span class="arrow">&rarr;</span><span class="step">Inception</span><span class="arrow">&rarr;</span><span class="step">Refinamento</span><span class="arrow">&rarr;</span><span class="step">Planejamento</span><span class="arrow">&rarr;</span><span class="step">Construção</span><span class="arrow">&rarr;</span><span class="step">Pós-Implantação</span>
                     </div>
                 </div>
                 <div class="card">
                     <h3>Fluxo de Sustentação</h3>
                     <p>Para a gestão de incidentes e solicitações de serviço em funcionalidades que já estão em ambiente produtivo, a Trademaster utiliza as melhores práticas do ITIL. Os usuários devem abrir um chamado via Jira Service Desk. Os tickets são tratados pelas squads responsáveis, que podem ser as equipes de Produtos e Delivery ou de Crédito. A equipe de dados também utiliza o service desk para a sustentação.</p>
                      <h4>Categorias de Atendimento:</h4>
-                     <ul>
-                         <li><strong>N2:</strong> Primeiro nível de atendimento e triagem.</li>
-                         <li><strong>N3:</strong> Nível escalado para a equipe de desenvolvimento para correção de bugs.</li>
-                     </ul>
+                       <ul>
+                           <li><strong>N2:</strong> Primeiro nível de atendimento e triagem.</li>
+                           <li><strong>N3:</strong> Nível escalado para a equipe de desenvolvimento para correção de bugs.</li>
+                       </ul>
                 </div>
             </div>
         </section>
@@ -629,9 +637,9 @@
             <div class="card">
                 <p>A Tradehub é a principal plataforma da Trademaster, sendo uma solução proprietária e desenvolvida 100% internamente.</p>
                 <ul>
-                    <li><strong>Proprietária e Flexível:</strong> Permite alterações e criações de novas funcionalidades à medida que o negócio evolui, representando uma vantagem competitiva.</li>
-                    <li><strong>Moderna e Escalável:</strong> É uma solução modular, multiproduto e escalável, projetada para alta volumetria de transações e fácil integração via API, arquivo ou portal.</li>
-                    <li><strong>Substituição do Legado:</strong> Foi desenvolvida para substituir o sistema legado JDE e hoje gerencia todo o ecossistema de produtos da empresa.</li>
+                     <li><strong>Proprietária e Flexível:</strong> Permite alterações e criações de novas funcionalidades à medida que o negócio evolui, representando uma vantagem competitiva.</li>
+                     <li><strong>Moderna e Escalável:</strong> É uma solução modular, multiproduto e escalável, projetada para alta volumetria de transações e fácil integração via API, arquivo ou portal.</li>
+                     <li><strong>Substituição do Legado:</strong> Foi desenvolvida para substituir o sistema legado JDE e hoje gerencia todo o ecossistema de produtos da empresa.</li>
                 </ul>
             </div>
 
@@ -672,15 +680,15 @@
                 <div class="card">
                     <h3>Softwares de Referência</h3>
                     <p>Para a interação com a equipe de TI e gestão dos processos, a Trademaster utiliza as seguintes ferramentas:</p>
-                     <ul>
-                        <li><strong>Jira:</strong> Utilizado para o tratamento de demandas e produtos.</li>
-                        <li><strong>Jira Service Desk:</strong> Ferramenta designada para a abertura de incidentes no fluxo de sustentação.</li>
-                        <li><strong>Confluence:</strong> Utilizado para toda a documentação técnica.</li>
+                      <ul>
+                         <li><strong>Jira:</strong> Utilizado para o tratamento de demandas e produtos.</li>
+                         <li><strong>Jira Service Desk:</strong> Ferramenta designada para a abertura de incidentes no fluxo de sustentação.</li>
+                         <li><strong>Confluence:</strong> Utilizado para toda a documentação técnica.</li>
                     </ul>
                 </div>
             </div>
         </section>
-            <section id="conceitos" class="section">
+             <section id="conceitos" class="section">
             <h2>Conceitos-Chave</h2>
             <p>Para entender nosso dia a dia, alguns termos são essenciais:</p>
              <div class="grid-container">
@@ -709,41 +717,68 @@
             <div class="card">
                 <h3>Para a Área Comercial</h3>
                 <ul>
-                    <li><strong>Análise de Propensão:</strong> Identificar, com base em dados de mercado, quais empresas (convênios) têm maior potencial para se tornarem clientes.</li>
-                    <li><strong>Segmentação de Clientes:</strong> Agrupar compradores e convênios por perfil de consumo para criar campanhas e ofertas de crédito mais assertivas.</li>
-                    <li><strong>Previsão de Churn:</strong> Criar modelos que preveem a probabilidade de um convênio deixar de usar a Trademaster, permitindo ações proativas de retenção.</li>
-                    <li><strong>Dashboards de Performance:</strong> Fornecer painéis interativos para que a gestão comercial acompanhe KPIs, metas e resultados em tempo real.</li>
+                     <li><strong>Análise de Propensão:</strong> Identificar, com base em dados de mercado, quais empresas (convênios) têm maior potencial para se tornarem clientes.</li>
+                     <li><strong>Segmentação de Clientes:</strong> Agrupar compradores e convênios por perfil de consumo para criar campanhas e ofertas de crédito mais assertivas.</li>
+                     <li><strong>Previsão de Churn:</strong> Criar modelos que preveem a probabilidade de um convênio deixar de usar a Trademaster, permitindo ações proativas de retenção.</li>
+                     <li><strong>Dashboards de Performance:</strong> Fornecer painéis interativos para que a gestão comercial acompanhe KPIs, metas e resultados em tempo real.</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Para Operações</h3>
                 <ul>
-                    <li><strong>Automação de Processos:</strong> Identificar gargalos e tarefas manuais repetitivas (ex: validação de títulos) e sugerir automações via scripts ou RPA.</li>
-                    <li><strong>Detecção de Anomalias:</strong> Desenvolver algoritmos para detectar transações ou chargebacks fora do padrão, que possam indicar erros ou fraudes.</li>
-                    <li><strong>Monitoramento de SLAs:</strong> Criar alertas automáticos para garantir que os prazos de repasse e tratamento de exceções sejam cumpridos.</li>
-                    <li><strong>Análise Preditiva de Chargeback:</strong> Analisar dados históricos para prever quais operações têm maior probabilidade de sofrer chargeback.</li>
+                     <li><strong>Automação de Processos:</strong> Identificar gargalos e tarefas manuais repetitivas (ex: validação de títulos) e sugerir automações via scripts ou RPA.</li>
+                     <li><strong>Detecção de Anomalias:</strong> Desenvolver algoritmos para detectar transações ou chargebacks fora do padrão, que possam indicar erros ou fraudes.</li>
+                     <li><strong>Monitoramento de SLAs:</strong> Criar alertas automáticos para garantir que os prazos de repasse e tratamento de exceções sejam cumpridos.</li>
+                     <li><strong>Análise Preditiva de Chargeback:</strong> Analisar dados históricos para prever quais operações têm maior probabilidade de sofrer chargeback.</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Para a Área Financeira</h3>
                 <ul>
-                    <li><strong>Previsão de Fluxo de Caixa:</strong> Utilizar modelos estatísticos e Machine Learning para projetar entradas e saídas com maior precisão, otimizando a gestão de caixa e funding.</li>
-                    <li><strong>Otimização da Cessão de Crédito:</strong> Analisar a performance dos FIDCs para recomendar a melhor alocação de títulos, maximizando o retorno financeiro.</li>
-                    <li><strong>Dashboards Contábeis:</strong> Automatizar a consolidação de dados para a criação de relatórios como DRE e Balanço Patrimonial, agilizando o fechamento mensal.</li>
-                    <li><strong>Análise de Rentabilidade:</strong> Cruzar dados de produtos, convênios e compradores para fornecer uma visão clara da rentabilidade de cada operação.</li>
+                     <li><strong>Previsão de Fluxo de Caixa:</strong> Utilizar modelos estatísticos e Machine Learning para projetar entradas e saídas com maior precisão, otimizando a gestão de caixa e funding.</li>
+                     <li><strong>Otimização da Cessão de Crédito:</strong> Analisar a performance dos FIDCs para recomendar a melhor alocação de títulos, maximizando o retorno financeiro.</li>
+                     <li><strong>Dashboards Contábeis:</strong> Automatizar a consolidação de dados para a criação de relatórios como DRE e Balanço Patrimonial, agilizando o fechamento mensal.</li>
+                     <li><strong>Análise de Rentabilidade:</strong> Cruzar dados de produtos, convênios e compradores para fornecer uma visão clara da rentabilidade de cada operação.</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Para Crédito, Riscos e Cobrança</h3>
                 <ul>
-                    <li><strong>Sistema de Alerta Precoce:</strong> Desenvolver modelos que identifiquem clientes com comportamento de risco antes mesmo de se tornarem inadimplentes.</li>
-                    <li><strong>Otimização da Régua de Cobrança:</strong> Segmentar devedores e testar diferentes abordagens (canal, mensagem, oferta) para descobrir a estratégia mais eficaz para cada perfil.</li>
-                    <li><strong>Análise de Portfólio:</strong> Criar dashboards que permitam à gestão de riscos monitorar a saúde da carteira de crédito em tempo real, por safra, setor e região.</li>
+                     <li><strong>Sistema de Alerta Precoce:</strong> Desenvolver modelos que identifiquem clientes com comportamento de risco antes mesmo de se tornarem inadimplentes.</li>
+                     <li><strong>Otimização da Régua de Cobrança:</strong> Segmentar devedores e testar diferentes abordagens (canal, mensagem, oferta) para descobrir a estratégia mais eficaz para cada perfil.</li>
+                     <li><strong>Análise de Portfólio:</strong> Criar dashboards que permitam à gestão de riscos monitorar a saúde da carteira de crédito em tempo real, por safra, setor e região.</li>
                 </ul>
             </div>
         </div>
     </section>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll("nav a");
+
+            const onScroll = () => {
+                const scrollPosition = window.scrollY;
+                let activeSectionId = null;
+                for (let i = sections.length - 1; i >= 0; i--) {
+                    const section = sections[i];
+                    if (section.offsetTop <= scrollPosition + 100) {
+                        activeSectionId = section.id;
+                        break;
+                    }
+                }
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.hash === `#${activeSectionId}`) {
+                        link.classList.add("active");
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", onScroll);
+        });
+    </script>
 
 </body>
 </html>
