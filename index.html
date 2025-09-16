@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding Completo - Trademaster</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* ADIÇÃO PARA MELHORAR A NAVEGAÇÃO */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 90px; /* Evita que o título fique atrás do menu */
+            scroll-padding-top: 90px;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            /* Fonte Poppins aplicada a todo o site */
+            font-family: 'Poppins', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -29,18 +34,29 @@
         header {
             background: #00A2A4;
             color: #ffffff;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem; /* Aumentei um pouco o padding */
             text-align: center;
             border-bottom: 5px solid #005E6E;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
+        .header-logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
         }
+        
+        /* ESTILO DO SUBTÍTULO ATUALIZADO */
         header .subtitle {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.6em;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            margin-top: 15px;
+            /* Efeito de gradiente no texto */
+            background: linear-gradient(90deg, #00d2e4, #5cffc5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
+        
         nav {
             background: #343a40;
             padding: 1rem;
@@ -57,7 +73,6 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        /* ESTILO PARA O LINK ATIVO E HOVER */
         nav a:hover,
         nav a.active {
             background-color: #00A2A4;
@@ -92,13 +107,12 @@
             color: #005E6E;
         }
         
-        /* NOVO ESTILO PARA OS LOGOS DOS PRODUTOS */
         .product-logo {
-            width: 180px; /* Largura fixa */
-            height: 80px;  /* Altura fixa */
-            object-fit: contain; /* Ajusta a imagem dentro do espaço, sem cortar */
-            display: block; /* Garante que a imagem seja um bloco para centralizar */
-            margin: 0 auto 15px auto; /* Centraliza horizontalmente e adiciona margem inferior */
+            width: 180px;
+            height: 80px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px auto;
         }
         
         ul {
@@ -134,7 +148,7 @@
 
     <header>
         <div class="container">
-            <h1>Onboarding Completo Trademaster</h1>
+            <img src="logoTrade.png" alt="Trademaster Logo" class="header-logo">
             <p class="subtitle">Sua empresa além dos limites.</p>
         </div>
     </header>
